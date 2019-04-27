@@ -1,0 +1,61 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+ion-content[scrollX] {
+  white-space: nowrap;
+  height: 120px;
+  overflow: scroll;
+
+.name, .rating
+{
+  text-align: center;
+}
+
+ion-card
+{
+  height: 600px !important;
+}
+
+.inline-list
+{
+  margin: 0% 5% -5% -8%;
+  
+  .scroll-item 
+  {
+    display: inline-block;
+    // height: 100%;
+    .item-with-text
+    {
+      padding: 1em 2em 2em 0em;
+      margin: 0 auto;
+      text-align: center;
+      img 
+      {
+        display: block;
+        margin: 0 auto;
+      }
+      ion-label
+      {
+        display: block;
+      }
+    }
+  }
+}
+  // .selectable-icon{
+  //   margin: 10px 20px 10px 20px;
+  //   color: red;
+  //   font-size: 100px;
+  // }
+
+}
+
+// ion-scroll[scroll-avatar]{
+//   height: 60px;
+// }
+
+/* Hide ion-content scrollbar */
+// ::-webkit-scrollbar{
+//   display:none;
+// }
