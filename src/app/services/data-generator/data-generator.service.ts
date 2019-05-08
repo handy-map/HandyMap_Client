@@ -5,7 +5,6 @@ import { IWorker } from 'src/app/models/worker.model';
   providedIn: 'root'
 })
 export class DataGeneratorService implements OnInit {
-
   categories: string[] = ['Electrician', 'Plumber', 'Tiler', 'Builder', 'Painter', 'Handyman'];
   ids: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
   names: string[] = ['Jason', 'Matthew', 'Yannick', 'Laura', 'Uvir', 'Matt', 'Jim', 'Thabiso'];

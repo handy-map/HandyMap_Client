@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'log-in',
     pathMatch: 'full'
   },
   {
@@ -28,7 +28,9 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'sign-up', loadChildren: './auth/sign-up/sign-up.module#SignUpPageModule' },
+  { path: 'log-in', loadChildren: './auth/log-in/log-in.module#LogInPageModule' }
 ];
 
 @NgModule({
