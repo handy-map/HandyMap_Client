@@ -9,11 +9,12 @@
       <ion-content>
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" (click)="clicked(p.title)">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
                 {{p.title}}
               </ion-label>
+              <ion-badge *ngIf="p.title == 'Notifications' && !this.hasBeenClicked" color="danger">1</ion-badge>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
