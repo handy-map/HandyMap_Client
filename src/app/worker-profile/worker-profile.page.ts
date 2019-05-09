@@ -22,6 +22,7 @@ export class WorkerProfilePage implements OnInit {
   getWorker(): void {
     const id = +this.route.snapshot.paramMap.get('workerId');
     this.workerService.getWorker(id).subscribe(worker => this.worker = worker);
+    debugger;
   }
 
   goBack(): void {
