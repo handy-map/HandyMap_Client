@@ -24,7 +24,7 @@
               <li *ngFor="let elect of electricians" class="scroll-item">
                 <div class="item-with-text" [routerLink]="['/worker', elect.id]">
                   <ion-avatar>
-                    <img src="../../assets/imgs/morty.jpg"/>
+                    <img src="../../assets/imgs/{{elect.id}}.jpg"/>
                   </ion-avatar>
                   <ion-label class="name">{{elect.name}}</ion-label>
                   <ion-label class="rating"><ion-icon name="star"></ion-icon>{{elect.rating}}</ion-label>
@@ -43,7 +43,7 @@
                 <li *ngFor="let plumb of plumbers" class="scroll-item">
                   <div class="item-with-text" [routerLink]="['/worker', plumb.id]">
                     <ion-avatar>
-                      <img src="../../assets/imgs/morty.jpg"/>
+                      <img src="../../assets/imgs/{{plumb.id}}.jpg"/>
                     </ion-avatar>
                     <ion-label class="name">{{plumb.name}}</ion-label>
                     <ion-label class="rating"><ion-icon name="star"></ion-icon>{{plumb.rating}}</ion-label>
@@ -62,7 +62,7 @@
                   <li *ngFor="let tiler of tilers" class="scroll-item">
                     <div class="item-with-text" [routerLink]="['/worker', tiler.id]">
                       <ion-avatar>
-                        <img src="../../assets/imgs/morty.jpg"/>
+                        <img src="../../assets/imgs/{{tiler.id}}.jpg"/>
                       </ion-avatar>
                       <ion-label class="name">{{tiler.name}}</ion-label>
                       <ion-label class="rating"><ion-icon name="star"></ion-icon>{{tiler.rating}}</ion-label>
@@ -81,7 +81,7 @@
                   <li *ngFor="let build of builders" class="scroll-item">
                     <div class="item-with-text" [routerLink]="['/worker', build.id]">
                       <ion-avatar>
-                        <img src="../../assets/imgs/morty.jpg"/>
+                        <img src="../../assets/imgs/{{build.id}}.jpg"/>
                       </ion-avatar>
                       <ion-label class="name">{{build.name}}</ion-label>
                       <ion-label class="rating"><ion-icon name="star"></ion-icon>{{build.rating}}</ion-label>
@@ -100,7 +100,7 @@
                     <li *ngFor="let paint of painters" class="scroll-item">
                       <div class="item-with-text" [routerLink]="['/worker', paint.id]">
                         <ion-avatar>
-                          <img src="../../assets/imgs/morty.jpg"/>
+                          <img src="../../assets/imgs/{{paint.id}}.jpg"/>
                         </ion-avatar>
                         <ion-label class="name">{{paint.name}}</ion-label>
                         <ion-label class="rating"><ion-icon name="star"></ion-icon>{{paint.rating}}</ion-label>
@@ -119,7 +119,7 @@
                       <li *ngFor="let handy of handymen" class="scroll-item">
                         <div class="item-with-text" [routerLink]="['/worker', handy.id]">
                           <ion-avatar>
-                            <img src="../../assets/imgs/morty.jpg"/>
+                            <img src="../../assets/imgs/{{handy.id}}.jpg"/>
                           </ion-avatar>
                           <ion-label class="name">{{handy.name}}</ion-label>
                           <ion-label class="rating"><ion-icon name="star"></ion-icon>{{handy.rating}}</ion-label>
