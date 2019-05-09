@@ -25,56 +25,119 @@
         <ion-icon name="notifications"></ion-icon>
       </ion-fab-button>
     </ion-fab>
-    <!-- <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list> -->
-    <ion-card *ngFor="let category of this.dataGenerator.categories">
-      <ion-card-header>{{category}}</ion-card-header>
+
+    <ion-card>
+      <ion-card-header>Electricians</ion-card-header>
         <ion-card-content>
           <ion-content scrollX="true" scrollY="false" class="">
             <ul class="inline-list">
-              <li *ngFor="let worker of workers" class="scroll-item">
-                <div class="item-with-text" [routerLink]="['/worker', worker.id]">
-                  <!-- <ion-card-content> -->
+              <li *ngFor="let elect of electricians" class="scroll-item">
+                <div class="item-with-text" [routerLink]="['/worker', elect.id]">
                   <ion-avatar>
                     <img src="../../assets/imgs/morty.jpg"/>
                   </ion-avatar>
-                  <ion-label class="name">{{worker.name}}</ion-label>
-                  <ion-label class="rating"><ion-icon name="star"></ion-icon>{{worker.rating}}</ion-label>
-                <!-- </ion-card-content> -->
+                  <ion-label class="name">{{elect.name}}</ion-label>
+                  <ion-label class="rating"><ion-icon name="star"></ion-icon>{{elect.rating}}</ion-label>
                 </div>
               </li>
             </ul>
           </ion-content>
         </ion-card-content>
       </ion-card>
+
+    <ion-card>
+        <ion-card-header>Plumbers</ion-card-header>
+          <ion-card-content>
+            <ion-content scrollX="true" scrollY="false" class="">
+              <ul class="inline-list">
+                <li *ngFor="let plumb of plumbers" class="scroll-item">
+                  <div class="item-with-text" [routerLink]="['/worker', plumb.id]">
+                    <ion-avatar>
+                      <img src="../../assets/imgs/morty.jpg"/>
+                    </ion-avatar>
+                    <ion-label class="name">{{plumb.name}}</ion-label>
+                    <ion-label class="rating"><ion-icon name="star"></ion-icon>{{plumb.rating}}</ion-label>
+                  </div>
+                </li>
+              </ul>
+            </ion-content>
+          </ion-card-content>
+        </ion-card>
+
+      <ion-card>
+          <ion-card-header>Tilers</ion-card-header>
+            <ion-card-content>
+              <ion-content scrollX="true" scrollY="false" class="">
+                <ul class="inline-list">
+                  <li *ngFor="let tiler of tilers" class="scroll-item">
+                    <div class="item-with-text" [routerLink]="['/worker', tiler.id]">
+                      <ion-avatar>
+                        <img src="../../assets/imgs/morty.jpg"/>
+                      </ion-avatar>
+                      <ion-label class="name">{{tiler.name}}</ion-label>
+                      <ion-label class="rating"><ion-icon name="star"></ion-icon>{{tiler.rating}}</ion-label>
+                    </div>
+                  </li>
+                </ul>
+              </ion-content>
+            </ion-card-content>
+          </ion-card>
         
+      <ion-card>
+          <ion-card-header>Builders</ion-card-header>
+            <ion-card-content>
+              <ion-content scrollX="true" scrollY="false" class="">
+                <ul class="inline-list">
+                  <li *ngFor="let build of builders" class="scroll-item">
+                    <div class="item-with-text" [routerLink]="['/worker', build.id]">
+                      <ion-avatar>
+                        <img src="../../assets/imgs/morty.jpg"/>
+                      </ion-avatar>
+                      <ion-label class="name">{{build.name}}</ion-label>
+                      <ion-label class="rating"><ion-icon name="star"></ion-icon>{{build.rating}}</ion-label>
+                    </div>
+                  </li>
+                </ul>
+              </ion-content>
+            </ion-card-content>
+          </ion-card>
+    
+        <ion-card>
+            <ion-card-header>Painters</ion-card-header>
+              <ion-card-content>
+                <ion-content scrollX="true" scrollY="false" class="">
+                  <ul class="inline-list">
+                    <li *ngFor="let paint of painters" class="scroll-item">
+                      <div class="item-with-text" [routerLink]="['/worker', paint.id]">
+                        <ion-avatar>
+                          <img src="../../assets/imgs/morty.jpg"/>
+                        </ion-avatar>
+                        <ion-label class="name">{{paint.name}}</ion-label>
+                        <ion-label class="rating"><ion-icon name="star"></ion-icon>{{paint.rating}}</ion-label>
+                      </div>
+                    </li>
+                  </ul>
+                </ion-content>
+              </ion-card-content>
+            </ion-card>
+    
+          <ion-card>
+              <ion-card-header>Handymen</ion-card-header>
+                <ion-card-content>
+                  <ion-content scrollX="true" scrollY="false" class="">
+                    <ul class="inline-list">
+                      <li *ngFor="let handy of handymen" class="scroll-item">
+                        <div class="item-with-text" [routerLink]="['/worker', handy.id]">
+                          <ion-avatar>
+                            <img src="../../assets/imgs/morty.jpg"/>
+                          </ion-avatar>
+                          <ion-label class="name">{{handy.name}}</ion-label>
+                          <ion-label class="rating"><ion-icon name="star"></ion-icon>{{handy.rating}}</ion-label>
+                        </div>
+                      </li>
+                    </ul>
+                  </ion-content>
+                </ion-card-content>
+              </ion-card>
+
 </ion-content>
