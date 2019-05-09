@@ -36,8 +36,4 @@ export class HomePage {
     this.painters = this.workerService.painters;
     this.handymen = this.workerService.handymen;
   }
-
-  hasBeenClicked() {
-    return DataGeneratorService.clicked;
-  }
 }
