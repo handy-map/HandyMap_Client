@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { DataGeneratorService } from './services/data-generator/data-generator.service';
 
 @Component({
   selector: 'app-root',
@@ -21,8 +22,10 @@ export class AppComponent {
       icon: 'notifications'
     }
   ];
+  hasBeenClicked = false;
 
   constructor(
+    private dataGenerator: DataGeneratorService,
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
@@ -35,5 +38,11 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+
+  clicked(title) {
+    if (title == 'Notifications') {
+      this.hasBeenClicked = true;
+    }
   }
 }

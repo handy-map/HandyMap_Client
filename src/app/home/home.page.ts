@@ -107,4 +107,8 @@ export class HomePage {
   {
     this.workers = this.dataGenerator.workers;
   }
+
+  hasBeenClicked() {
+    return DataGeneratorService.clicked;
+  }
 }

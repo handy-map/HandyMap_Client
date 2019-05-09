@@ -6,6 +6,7 @@ import {
   ToastController,
   AlertController
 } from "@ionic/angular";
+import { DataGeneratorService } from '../services/data-generator/data-generator.service';
 
 @Component({
   selector: "app-book-now",
@@ -18,6 +19,7 @@ export class BookNowPage implements OnInit {
   todayPlusThreeString: string;
 
   constructor(
+    private dataGenerator: DataGeneratorService,
     private router: Router,
     private loadinCtrl: LoadingController,
     private toastController: ToastController,
