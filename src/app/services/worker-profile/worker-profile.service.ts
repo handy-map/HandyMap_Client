@@ -10,7 +10,7 @@ export class WorkerProfileService {
   categories: string[] = ['Electrician', 'Plumber', 'Tiler', 'Builder', 'Painter', 'Handyman'];
   ids: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
   names: string[] = ['Jason', 'Matthew', 'Yannick', 'Laura', 'Uvir', 'Matt', 'Jim', 'Thabiso'];
-  surnames: string[] = ['Jason', 'Matthew', 'Yannick', 'Laura', 'Uvir', 'Matt', 'Jim', 'Thabiso'];
+  surnames: string[] = ['Jason', 'Collins', 'Yannick', 'Laura', 'Uvir', 'Matt', 'Jim', 'Thabiso'];
   emails: string[] = ['Jason@blank.com', 'Matthew@blank.com', 'Yannick@blank.com', 'Laura@blank.com',
     'Uvir@blank.com', 'Matt@blank.com', 'Jim@blank.com', 'Thabiso@blank.com'];
   phoneNumbers: string[] = ['0829383838', '0829383838', '0829383838', '0829383838', '0829383838', '0829383838', '0829383838', '0829383838'];

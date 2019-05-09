@@ -17,9 +17,4 @@ export class HomePage {
   {
     this.workers = this.dataGenerator.workers;
   }
-
-  // onClick(worker: IWorker)
-  // {
-  //   this.router.navigate
-  // }
 }

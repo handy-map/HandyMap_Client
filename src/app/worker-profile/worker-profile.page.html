@@ -8,5 +8,31 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <img src="../../assets/imgs/morty.jpg">
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Name:</ion-label>
+        <ion-label>{{worker.name}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Surname:</ion-label>
+        <ion-label>{{worker.surname}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email:</ion-label>
+        <ion-label>{{worker.email}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Phone Number:</ion-label>
+        <ion-label>{{worker.phoneNumber}}</ion-label>
+      </ion-item>
+      <ion-list>
+        <ion-label>Skills:</ion-label>
+        <ion-list>
+          <ion-item *ngFor="let skill of worker.skills">{{skill}}</ion-item>
+        </ion-list>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
